@@ -21,6 +21,7 @@ body {
 .main-container {
     width: 100%;
     max-width: 1440px;
+    margin: auto;
     padding: 0 50px;
     box-sizing: border-box;
 }
@@ -79,19 +80,19 @@ header {
 }
 
 .topnavbar a:hover {
-    color: blue;
+    color: var(--main-color);
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
     .topnavbar a:hover {
         border-top: transparent solid 2px;
-        border-bottom: blue solid 2px;
+        border-bottom: var(--main-color) solid 2px;
     }
 }
 
-@media screen and (min-width: 501px) {
+@media screen and (min-width: 769px) {
     .topnavbar a:hover {
-        border-top: blue solid 2px;
+        border-top: var(--main-color) solid 2px;
         border-bottom: transparent solid 2px;
     }
 }
