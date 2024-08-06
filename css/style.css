@@ -59,13 +59,24 @@ a {
     color: var(--main-bg-color)
 }
 
+h2 {
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+h3 {
+    font-size: 12px;
+    font-weight: normal;
+    margin: 0;
+}
+
 /****** Header ***********/
-header {
+.headerLogoNav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 10px 0 100px 0;
+    margin: 10px 0 10px 0;
 }
 
 .topnavbar a {
@@ -96,6 +107,66 @@ header {
         border-bottom: transparent solid 2px;
     }
 }
+
+.headerText {
+    margin-bottom: 20px;
+}
+
+/****** SearchBar ***********/
+.searchBar {
+    display: flex;
+    margin-bottom: 20px;
+    height: 48px;
+}
+
+.locationIcon {
+    width: 48px;
+    border-radius: 14px 0 0 14px;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchBar input[type=text] {
+    font-weight: bold;
+    border-left: 0;
+    border-top: 1px solid var(--main-bg-color);
+    border-right: 0;
+    border-bottom: 1px solid var(--main-bg-color);
+    text-align: center;
+    width: 140px;
+}
+
+.searchBar button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-color);
+    color: white;
+    font-weight: bold;
+    border-radius: 0 14px 14px 0;
+    border-left: 0;
+    border-top: 1px solid var(--main-bg-color);
+    border-right: 0;
+    border-bottom: 1px solid var(--main-bg-color);
+    text-align: center;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .searchBar button p {
+        display:none;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .searchBar button i {
+        display:none;
+    }
+}
+
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
