@@ -49,10 +49,15 @@ a {
 
 .card-title {
     font-size: 16px;
+    font-weight: bold;
+}
+
+.card-subtitle {
+    font-size: 14px;
 }
 
 .euro {
-    font-weight: 700;
+    font-weight: 300;
 }
 
 .neutral-star {
@@ -176,32 +181,32 @@ h3 {
     margin-bottom: 20px;
 }
 
-.filterLabel{
+.filterLabel {
     border: 2px solid #D9D9D9;
-    border-radius:32px;
-    padding: 14px 20px;
+    border-radius: 32px;
+    padding: 12px 20px;
     margin: 0 10px;
     text-wrap: nowrap;
     cursor: pointer;
 }
 
-.filterLabel i{
+.filterLabel i {
     margin-right: 8px;
 }
 
-.filterLabel:hover{
+.filterLabel:hover {
     background-color: var(--filter-bg-color);
 }
 
-.filterResult{
-    display:flex;
+.filterResult {
+    display: flex;
     flex-direction: row;
     align-items: center;
     margin-bottom: 20px;
 }
 
-.filterResult h3{
-    margin-left:10px;
+.filterResult h3 {
+    margin-left: 10px;
 }
 
 /****** Hebergements And Populaires ***********/
@@ -220,6 +225,40 @@ h3 {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+}
+
+.hebergements-cards .card {
+    width: 220px;
+    margin-top: 33px;
+}
+
+.hebergements-cards .card img {
+    width: 100%;
+    height: 100px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.hebergements-cards .card-content {
+    width: 67%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.hebergements-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.hebergements-cards .card-subtitle {
+    margin: 0;
+}
+
+.hebergements-cards .card-rating {
+    margin-bottom: 5px;
 }
 
 /****** Populaires ***********/
