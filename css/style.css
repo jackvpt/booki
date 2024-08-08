@@ -237,7 +237,7 @@ h3 {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 8px;
     margin-bottom: 30px;
 }
 
@@ -257,7 +257,7 @@ h3 {
 }
 
 .hebergements-cards .card-content {
-    padding-left: 15px;
+    padding-left: 8px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -267,6 +267,7 @@ h3 {
 .hebergements-cards .card-title {
     margin-top: 10px;
     margin-bottom: 4px;
+    font-size: 14px;
 }
 
 .hebergements-cards .card-subtitle {
@@ -331,7 +332,7 @@ h3 {
     margin-bottom: 5px;
 }
 
-/****** Populaires ***********/
+/****** Activites ***********/
 .activites {
     margin-top: 20px;
     padding: 30px;
@@ -340,11 +341,17 @@ h3 {
 .activites-cards {
     display: flex;
     justify-content: space-between;
+    gap: 25px;
 }
 
 .activites-cards .card-title {
-    padding: 16px;
+    margin: 0 0 0 16px;
+    height: 50px;
+    display:flex;
+    align-items: center;
 }
+
+
 
 .activites-cards .card {
     margin-top: 33px;
@@ -366,12 +373,12 @@ h3 {
 footer {
     background-color: var(--filter-bg-color);
     padding: 20px;
-    display:flex;
+    display: flex;
     justify-content: flex-start;
 }
 
 .footer-column {
-    width:33%;
+    width: 33%;
 }
 
 .footerTitle {
@@ -387,11 +394,11 @@ footer ul {
 
 footer li {
     margin: 10px 0;
-    font-size:12px;
+    font-size: 12px;
 }
 
 footer a:hover {
-    color:var(--main-color)
+    color: var(--main-color)
 }
 
 
@@ -429,6 +436,10 @@ footer a:hover {
 
     .populaires-cards .card-subtitle {
         font-size: 13px;
+    }
+
+    .activites-cards .card img {
+        height: 200px;
     }
 }
 
