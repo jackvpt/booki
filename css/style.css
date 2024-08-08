@@ -14,16 +14,10 @@
 }
 
 body {
-    display: flex;
-    justify-content: center;
-}
-
-.main-container {
+    margin: auto;
     width: 100%;
     max-width: 1440px;
-    margin: auto;
-    padding: 0 50px;
-    box-sizing: border-box;
+    box-sizing:border-box;
 }
 
 a {
@@ -62,6 +56,9 @@ a {
 
 .neutral-star {
     color: var(--main-bg-color)
+}
+h1{
+    font-size: 22px;
 }
 
 h2 {
@@ -152,8 +149,6 @@ h3 {
     color: black;
 }
 
-@media screen and (max-width: 768px) {}
-
 
 
 /****** Filter Bar ***********/
@@ -234,6 +229,10 @@ h3 {
     flex-direction: row;
     align-items: center;
     margin-bottom: 20px;
+}
+
+.filter-result i {
+    border-radius: 10px;
 }
 
 .filter-result h3 {
@@ -367,6 +366,7 @@ h3 {
 
 .activites-cards {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     gap: 25px;
 }
@@ -377,8 +377,6 @@ h3 {
     display: flex;
     align-items: center;
 }
-
-
 
 .activites-cards .card {
     margin-top: 33px;
@@ -393,12 +391,12 @@ h3 {
 }
 
 .activites-cards a {
-    width: 24%;
+    width: 100%;
 }
 
 /****** Footer ***********/
 footer {
-    background-color: var(--filter-bg-color);
+    background-color: var(--main-bg-color);
     padding: 20px;
     display: flex;
     justify-content: flex-start;
@@ -517,7 +515,7 @@ footer a:hover {
 
     .populaires {
         order: -1;
-        margin-bottom:20px;
+        margin-bottom: 20px;
 
     }
 
