@@ -65,7 +65,7 @@ h1 {
 }
 
 h2 {
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bold;
 }
 
@@ -76,11 +76,12 @@ h3 {
 
 h4 {
     font-size: 16px;
-    font-weight: normal;
+    font-weight: bold;
 }
 
 h5 {
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: normal;
 }
 
 /****** Header ***********/
@@ -236,7 +237,7 @@ h5 {
     border-radius: 18px;
     width: 18px;
     height: 18px;
-    margin-right:10px;
+    margin-right: 10px;
 }
 
 .filter-result h3 {
@@ -319,8 +320,9 @@ h5 {
 
 .populaires-title {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
 }
 
 .populaires-cards {
@@ -401,10 +403,11 @@ h5 {
 /****** Footer ***********/
 footer {
     background-color: var(--main-bg-color);
-    padding: 20px;
+    padding-left: 20px;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
+    gap:30px;
 }
 
 .footer-column {
@@ -464,10 +467,11 @@ footer a:hover {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        gap: 20px;
     }
 
     .populaires-cards a {
-        width: 30%;
+        width: 33%;
     }
 
     .populaires-cards .card-title {
@@ -526,7 +530,7 @@ footer a:hover {
         flex-grow: 2;
     }
 
-    .search-bar button div {
+    .search-bar button span {
         display: none;
     }
 
