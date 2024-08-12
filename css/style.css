@@ -1,4 +1,6 @@
-/****** General ***********/
+/* ======================== */
+/* GENERAL */
+/* ======================== */
 * {
     font-family: "Raleway", sans-serif;
 }
@@ -84,7 +86,9 @@ h5 {
     font-weight: normal;
 }
 
-/****** Header ***********/
+/* ======================== */
+/* HEADER */
+/* ======================== */
 .header-logo-navbar {
     display: flex;
     flex-direction: row;
@@ -115,7 +119,9 @@ h5 {
     margin: 40px 0 30px 0;
 }
 
-/****** search-bar ***********/
+/* ======================== */
+/* SEARCH BAR */
+/* ======================== */
 .search-bar {
     display: flex;
     flex-direction: row;
@@ -143,9 +149,9 @@ h5 {
 }
 
 ::placeholder {
+    /* Firefox */
     color: black;
     opacity: 1;
-    /* Firefox */
 }
 
 ::-ms-input-placeholder {
@@ -175,7 +181,9 @@ h5 {
     color: black;
 }
 
-/****** Filter Bar ***********/
+/* ======================== */
+/* FILTER BAR */
+/* ======================== */
 .filter-bar {
     display: flex;
     flex-direction: row;
@@ -244,7 +252,9 @@ h5 {
     margin-left: 10px;
 }
 
-/****** Hebergements And Populaires ***********/
+/* ======================== */
+/* HEBERGEMENTS AND POPULAIRES */
+/* ======================== */
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
@@ -256,7 +266,7 @@ h5 {
     box-sizing: border-box;
 }
 
-/****** Hebergements ***********/
+/* HEBERGEMENTS */
 .hebergements {
     width: 65%;
     background-color: var(--main-bg-color);
@@ -312,7 +322,7 @@ h5 {
     color: var(--main-color);
 }
 
-/****** Populaires ***********/
+/* POPULAIRES */
 .populaires {
     width: 32%;
     background-color: var(--main-bg-color);
@@ -365,7 +375,9 @@ h5 {
     margin-bottom: 5px;
 }
 
-/****** Activites ***********/
+/* ======================== */
+/* ACTIVITES */
+/* ======================== */
 .activites {
     margin-top: 20px;
     padding: 30px;
@@ -400,14 +412,16 @@ h5 {
     width: 100%;
 }
 
-/****** Footer ***********/
+/* ======================== */
+/* FOOTER */
+/* ======================== */
 footer {
     background-color: var(--main-bg-color);
     padding-left: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap:30px;
+    gap: 30px;
 }
 
 .footer-column {
@@ -428,19 +442,27 @@ footer a:hover {
     color: var(--main-color);
 }
 
-/* Le code ci-dessous correspond à la version responsive uniquement */
+/* ======================== */
+/* MEDIA QUERIES FOR RESPONSIVE */
+/* ======================== */
 
-/****** Media queries ***********/
+/* ======================== */
+/* MEDIUM AND LARGE DEVICES (MIN-WIDTH: 768px) */
+/* ======================== */
 @media screen and (min-width: 768px) {
-    /*SEARCH BAR*/
+
+    /* MEDIA QUERIES SEARCH BAR */
     .search-bar button i {
         display: none;
     }
 }
 
-/* Medium devices (tablets, less/equal than 1024px) */
+/* ======================== */
+/* MEDIUM DEVICES (MAX-WIDTH: 1024px) */
+/* ======================== */
 @media (max-width: 1024px) {
-    /*FILTER BAR*/
+
+    /* MEDIA QUERIES FILTER BAR */
     .filter-bar {
         flex-direction: column;
         align-items: flex-start;
@@ -487,15 +509,18 @@ footer a:hover {
     }
 }
 
-/* Small devices (phones, less than 768px) */
+/* ======================== */
+/* SMALL DEVICES (MAX-WIDTH: 767.98px) */
+/* ======================== */
 @media (max-width: 767.98px) {
-    /*GENERAL*/
+
+    /* MEDIA QUERY GENERAL */
     body {
         padding: 0;
         margin: 0;
     }
 
-    /*HEADER*/
+    /* MEDIA QUERY HEADER */
     .header-logo-navbar {
         flex-direction: column;
         gap: 10px;
@@ -521,7 +546,7 @@ footer a:hover {
         border-bottom: var(--main-color) solid 2px;
     }
 
-    /*SEARCH BAR*/
+    /* MEDIA QUERY SEARCH BAR */
     .search-bar {
         margin: 0 20px 30px;
     }
@@ -534,7 +559,7 @@ footer a:hover {
         display: none;
     }
 
-    /*FILTER BAR*/
+    /* MEDIA QUERY FILTER BAR */
     .filter-bar {
         margin: 0px 20px 30px;
         flex-direction: column;
@@ -560,13 +585,13 @@ footer a:hover {
         margin-left: 20px;
     }
 
-    /*HEBERGEMENTS AND POPULAIRES*/
+    /* MEDIA QUERY HEBERGEMENTS AND POPULAIRES */
     .hebergements-and-populaires section {
         border-radius: 0;
         padding: 20px;
     }
 
-    /*POPULAIRES*/
+    /* MEDIA QUERY POPULAIRES */
     .populaires {
         order: -1;
         padding: 30px 20px;
@@ -586,7 +611,7 @@ footer a:hover {
         width: 100%;
     }
 
-    /*HEBERGEMENTS*/
+    /* MEDIA QUERY HEBERGEMENTS */
     .hebergements {
         width: 100%;
         background-color: white;
@@ -596,7 +621,7 @@ footer a:hover {
         width: 100%;
     }
 
-    /*ACTIVITES*/
+    /* MEDIA QUERY ACTIVITES */
     .activites {
         padding: 0 20px;
         margin-bottom: 30px;
@@ -611,11 +636,12 @@ footer a:hover {
         height: 141px;
     }
 
-    /*FOOTER*/
+    /* MEDIA QUERY FOOTER */
     footer {
         flex-direction: column;
         gap: 20px;
     }
+
     .footer-column {
         width: 100%;
     }
