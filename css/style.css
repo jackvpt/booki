@@ -30,27 +30,35 @@ a {
 }
 
 .section-title {
-    margin: 0 0 20px;
+    margin: 0 0 30px;
 }
 
 .card {
     background-color: white;
     border-radius: 20px;
-    padding: 5px;
+    border: 5px solid white;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    padding-bottom: 10px;
 }
 
 .card img {
     object-fit: cover;
+    border-bottom: 5px solid white;
 }
 
 .card-title {
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .card-subtitle {
     font-size: 14px;
+}
+
+.card-txt{
+    display:flex;
+    flex-direction: column;
+    gap:8px;
 }
 
 .euro {
@@ -61,30 +69,37 @@ a {
     color: var(--main-bg-color);
 }
 
+p{
+    margin:0;
+}
+
 h1 {
     font-size: 22px;
-    font-weight: bold;
+    font-weight: 700;
+    margin: 15px 0 8px 0;
 }
 
 h2 {
     font-size: 22px;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 h3 {
     font-size: 18px;
     font-weight: bold;
+    margin:0;
 }
 
 h4 {
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 700;
+    margin:0;
 }
 
 h5 {
     font-size: 16px;
     font-weight: normal;
-    margin:0;
+    margin: 0;
 }
 
 /* =========================================== */
@@ -117,7 +132,7 @@ h5 {
 }
 
 .header-text {
-    margin: 40px 0 30px 0;
+    margin: 40px 0 35px 0;
 }
 
 /* =========================================== */
@@ -127,7 +142,7 @@ h5 {
     display: flex;
     flex-direction: row;
     height: 48px;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 }
 
 .location-icon {
@@ -167,11 +182,11 @@ h5 {
     background-color: var(--main-color);
     color: white;
     font-weight: bold;
-    border-radius: 0 14px 14px 0;
+    border-radius: 0 15px 15px 0;
     border-left: 0;
     border-top: 1px solid var(--main-bg-color);
     border-right: 0;
-    border-bottom: 1px solid var(--main-bg-color);
+    border-bottom: 1px solid var(--main-color);
     text-align: center;
     padding: 0 20px;
     cursor: pointer;
@@ -190,7 +205,7 @@ h5 {
     flex-direction: row;
     align-items: center;
     font-weight: bold;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 }
 
 .filter-text {
@@ -294,25 +309,14 @@ h5 {
 }
 
 .hebergements-cards .card-content {
-    padding-left: 8px;
+    padding: 0 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap:8px;
     box-sizing: border-box;
 }
 
-.hebergements-cards .card-title {
-    margin-top: 10px;
-    margin-bottom: 4px;
-}
-
-.hebergements-cards .card-subtitle {
-    margin: 0 0 4px 0;
-}
-
-.hebergements-cards .card-rating {
-    margin-bottom: 5px;
-}
 
 .display-more {
     font-weight: bold;
@@ -345,6 +349,7 @@ h5 {
 
 .populaires-cards .card {
     display: flex;
+    padding-bottom:0;
 }
 
 .populaires-cards img {
@@ -356,7 +361,7 @@ h5 {
 
 .populaires-cards .card-content {
     width: 67%;
-    padding-left: 15px;
+    padding: 5px 0 5px 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -364,23 +369,19 @@ h5 {
 }
 
 .populaires-cards .card-title {
-    margin-top: 10px;
-    margin-bottom: 4px;
+    /* margin-top: 10px;
+    margin-bottom: 4px; */
 }
 
 .populaires-cards .card-subtitle {
     margin: 0;
 }
 
-.populaires-cards .card-rating {
-    margin-bottom: 5px;
-}
-
 /* =========================================== */
 /* ACTIVITES */
 /* =========================================== */
 .activites {
-    margin-top: 20px;
+    margin: 35px 0;
     padding: 30px;
 }
 
@@ -392,14 +393,19 @@ h5 {
 }
 
 .activites-cards .card-title {
-    margin: 0 0 0 16px;
-    height: 50px;
+    /* margin: 0 0 0 16px; */
+    /* height: 50px;
     display: flex;
-    align-items: center;
+    align-items: center; */
+}
+
+.activites-cards .card .card-txt{
+    padding: 20px 19px;
 }
 
 .activites-cards .card {
     padding: 0;
+    border-width: 0;
 }
 
 .activites-cards .card img {
@@ -407,6 +413,7 @@ h5 {
     height: 380px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    border-width: 0;
 }
 
 .activites-cards a {
@@ -427,15 +434,20 @@ footer {
 
 .footer-column {
     width: 33%;
+    padding:20px;
 }
 
 footer ul {
     padding: 0;
+    margin: 15px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
     list-style-type: none;
 }
 
 footer li {
-    margin: 10px 0;
+    /* margin: 10px 0; */
     font-size: 16px;
 }
 
@@ -558,6 +570,10 @@ footer a:hover {
 
     .search-bar button span {
         display: none;
+    }
+    .search-bar button {
+        border-radius: 15px;
+        box-shadow: 0px 4px 4px 0px #00000040;
     }
 
     /* MEDIA QUERY FILTER BAR */
