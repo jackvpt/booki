@@ -1,0 +1,20 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended" // Add this line to include Prettier
+  ],
+  "parserOptions": {
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "rules": {
+    "prettier/prettier": ["error", { "semi": false }],
+    "semi": ["error", "never"], // Interdit les points-virgules
+    "no-extra-semi": "error" // Prevents from adding extra semicolons
+  }
+}
