@@ -3,6 +3,7 @@
 /* =========================================== */
 * {
     font-family: "Raleway", sans-serif;
+    box-sizing: border-box;
 }
 
 :root {
@@ -264,6 +265,7 @@ a {
     padding: 12px 20px;
     text-wrap: nowrap;
     cursor: pointer;
+    font-size: 17px;
 }
 
 .filter-label i {
@@ -519,8 +521,8 @@ footer a:hover {
         margin-top: 20px;
     }
 
-    .filter-text {
-        /* margin-bottom: 10px; */
+    .filter-label {
+        font-size: 16px;
     }
 
     .hebergements-and-populaires {
@@ -607,8 +609,6 @@ footer a:hover {
 
     }
 
-
-
     .top-navbar-link:hover {
         border-top: transparent solid 2px;
         border-bottom: var(--main-color) solid 2px;
@@ -641,17 +641,16 @@ footer a:hover {
 
     .filter-bar-labels {
         flex-direction: column;
-        flex-wrap: wrap;
-        gap: 15px;
         width: 100%;
     }
 
-    .filter-label {
-        width: 50%;
+    .filter-bar-sublabels {
+        justify-content: space-between;
     }
 
-    .filter-text {
-        margin-bottom: 10px;
+    .filter-label {
+        width: 48%;
+        font-size: 14px;
     }
 
     .filter-result {
